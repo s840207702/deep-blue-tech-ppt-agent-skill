@@ -1,0 +1,13 @@
+{
+  "name": "deep-blue-tech-ppt-agent-skill",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Deterministic visual QA dependencies for the 深蓝科技风 PPT Agent Skill",
+  "scripts": {
+    "test:style": "python3 scripts/test_validate_style.py && python3 scripts/test_rendered_style.py"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

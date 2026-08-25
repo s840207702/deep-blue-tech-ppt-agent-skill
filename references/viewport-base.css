@@ -1,0 +1,101 @@
+/* Static export viewport contract */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #0b0f17;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide[hidden] {
+  display: none;
+}
+
+.slide-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  padding: var(--slide-padding);
+}
+
+:root {
+  --font-sans: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  --main-title-family: var(--font-sans);
+  --main-title-weight: 900;
+  --main-title-letter-spacing: -0.045em;
+  --main-title-line-height: 1.08;
+  --title-size: clamp(3.7rem, 6vw, 6.4rem);
+  --h2-size: clamp(3rem, 5vw, 5.3rem);
+  --h3-size: clamp(1.2rem, 1.7vw, 1.8rem);
+  --body-size: clamp(1rem, 1.45vw, 1.5rem);
+  --small-size: clamp(0.72rem, 0.9vw, 0.95rem);
+  --slide-padding: clamp(3rem, 5.2vw, 6rem);
+  --content-gap: clamp(1rem, 2vw, 2.2rem);
+}
+
+.title,
+.cover-title {
+  font-family: var(--main-title-family);
+  font-weight: var(--main-title-weight);
+  letter-spacing: var(--main-title-letter-spacing);
+  line-height: var(--main-title-line-height);
+  text-wrap: balance;
+}
+
+.cover-title {
+  max-width: min(82vw, 1500px);
+  font-size: var(--title-size);
+}
+
+.title {
+  max-width: min(86vw, 1550px);
+  font-size: var(--h2-size);
+}
+
+img,
+.image-container {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.grid {
+  display: grid;
+  gap: var(--content-gap);
+}
+
+.card,
+.content-box,
+.screenshot {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Export is performed at the target viewport, normally 1920×1080 or 1920×1920. */

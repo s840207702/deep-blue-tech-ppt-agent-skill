@@ -1,0 +1,4 @@
+interface:
+  display_name: "深蓝科技风 PPT"
+  short_description: "把中文脚本制作成深蓝科技风静态 HTML/PNG 教程图片"
+  default_prompt: "Use $deep-blue-tech-ppt to turn my script or Markdown into static deep-blue tutorial slides, then export page-by-page PNG images and a contact sheet with rendered QA."
