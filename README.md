@@ -1,4 +1,4 @@
-# 深蓝科技风 PPT Agent Skill
+<h1 align="center">深蓝科技风 PPT Agent Skill</h1>
 
 <div align="center">
 
